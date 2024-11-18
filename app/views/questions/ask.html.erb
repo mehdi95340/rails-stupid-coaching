@@ -1,0 +1,11 @@
+
+<h1>Your Question</h1>
+<p><%= @question %></p>
+
+<h1>Coach's Answer</h1>
+<p><%= @answer %><p>
+
+<form action="/answer" method="get" data-turbo="false">
+  <input type="text" name="question">
+  <input type="submit" value="Ask!">
+</form>
